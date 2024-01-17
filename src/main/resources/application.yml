@@ -1,0 +1,15 @@
+server:
+  port: 8782
+
+spring:
+  datasource:
+    url:  jdbc:mysql://localhost:3306/MOVIE_APP?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app-properties:
+  api-password: ${API_PASSWORD:admin}
+  api-username: ${API_USERNAME:admin}
